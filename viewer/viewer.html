@@ -1,0 +1,145 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Relationship explorer</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;height:100vh;display:flex;flex-direction:column;background:#000000;color:#e5e5e5;font:13px system-ui,sans-serif}
+header{display:flex;align-items:baseline;gap:12px;padding:5px 12px;border-bottom:1px solid #262626;white-space:nowrap;overflow:hidden}
+h1{font-size:14px;margin:0}
+header .muted{overflow:hidden;text-overflow:ellipsis}
+#private-note{color:#fca5a5;font-weight:600}
+input[type=password]{width:100%;min-width:0}
+#unlock-button{flex:0}
+#unlock .row{margin-top:0}
+.muted{color:#a3a3a3;font-size:12px}
+main{flex:1;display:flex;min-height:0}
+nav{width:240px;flex:none;overflow:auto;padding:8px 10px;border-right:1px solid #262626}
+main.panel-hidden nav{display:none}
+#stage{flex:1;min-width:0;position:relative}
+#graph{width:100%;height:100%}
+#toolbar{position:absolute;left:8px;top:8px;z-index:4;display:flex;gap:4px;align-items:center}
+#toolbar input{width:260px}
+#toolbar button,#toolbar input{background:#171717;box-shadow:0 1px 6px #000c}
+#panel-toggle[aria-pressed=true]{background:#262626;border-color:#e5e5e5}
+aside{position:absolute;right:8px;top:8px;z-index:4;width:340px;max-width:calc(100% - 16px);max-height:calc(100% - 16px);overflow:auto;padding:10px 12px;background:#0a0a0af2;border:1px solid #404040;border-radius:6px;box-shadow:0 4px 16px #000c;resize:horizontal;direction:rtl}
+aside>*{direction:ltr}
+aside[hidden]{display:none}
+#detail-close{float:right;margin:-4px -6px 0 6px;padding:0 7px;border:0;background:none;font-size:18px;color:#a3a3a3}
+#detail-close:hover{color:#e5e5e5}
+h2{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#a3a3a3;margin:12px 0 5px}
+h2:first-child{margin-top:0}
+input,select,button{font:inherit;color:#e5e5e5;background:#171717;border:1px solid #404040;border-radius:4px;padding:5px 7px}
+input[type=text],select{width:100%}
+input[type=checkbox]{padding:0;margin:0 6px 0 0}
+button{cursor:pointer}
+button:hover{border-color:#a3a3a3}
+.row{display:flex;gap:6px;margin:4px 0}
+.row>*{flex:1}
+label.check{display:flex;align-items:center;margin:3px 0;cursor:pointer}
+#types{display:flex;flex-wrap:wrap;gap:4px}
+#types button,#subtypes button{border:0;background:none;padding:2px 4px;opacity:.4;text-decoration:none}
+#types button{font-size:12px}
+#types button[aria-pressed=true],#subtypes button[aria-pressed=true]{opacity:1;text-decoration:underline;text-underline-offset:3px}
+#types .all{color:#e5e5e5}
+#subtypes .subrow{display:flex;flex-wrap:wrap;gap:3px;align-items:center;margin-top:4px}
+#subtypes button{font-size:11px;padding:1px 3px}
+#layout-toggle[aria-pressed=true]{background:#262626;border-color:#e5e5e5}
+#status{position:absolute;left:10px;bottom:8px;z-index:2;pointer-events:none}
+details{margin-top:10px}
+summary{cursor:pointer;color:#a3a3a3}
+details p{margin:6px 0}
+details.merge{margin-top:4px}
+details.merge summary{cursor:pointer}
+#detail-title{font-size:15px;font-weight:600;margin:0 0 2px;overflow-wrap:anywhere}
+#neighbors button{display:block;width:100%;text-align:left;margin:1px 0;padding:3px 6px;font-size:12px;line-height:1.3}
+#neighbors a,#docs a{color:#93c5fd}
+#docs div{margin:2px 0}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font:11px monospace;color:#d4d4d4}
+.graph-tooltip{position:absolute;z-index:3;pointer-events:none;max-width:360px;padding:5px 8px;background:#171717;border:1px solid #525252;border-radius:4px;font-size:12px;box-shadow:0 2px 8px #0008}
+</style>
+<header><h1>Relationship explorer</h1><span id="private-note" hidden>Real contact details shown: do not share screenshots</span><span class="muted">ENTITY_COUNT entities · EDGE_COUNT links</span><button id="privacy-open" style="margin-left:auto;flex:none">Privacy &amp; FAQ</button></header>
+<dialog id="privacy" style="max-width:640px;background:#171717;color:#e5e5e5;border:1px solid #525252;border-radius:6px;padding:16px 20px;font-size:13px;line-height:1.45">
+  <h2 style="margin-top:0">Privacy &amp; FAQ</h2>
+  <h3>Does appearing here mean someone did something wrong?</h3>
+  <p>No. Being named in these records implies no wrongdoing, no knowledge of any crime and no relationship with anyone. A link means only that names occur together in records. Nothing here is an accusation or a legal finding.</p>
+  <h3>Where does this come from?</h3>
+  <p>Documents released publicly by the US Department of Justice and related public records. Names, links and text are extracted automatically, so they contain errors: misread text, wrongly merged names and people who merely share a name. Check the source document before relying on anything.</p>
+  <h3>How are survivors protected?</h3>
+  <p>Survivors appear only under a pseudonym. Their names are not shown on this site, including those who have spoken publicly. No attempt is made to identify anyone the records keep anonymous.</p>
+  <h3>Can I have a name removed or corrected?</h3>
+  <p>Yes. Email <a href="mailto:lasushin@proton.me" style="color:#93c5fd">lasushin@proton.me</a> with the name or node and what is wrong, and say if it is about you. Requests are answered as soon as possible and within one month.</p>
+  <h3>Your rights</h3>
+  <p>If this site processes your personal data you have rights under the GDPR and the French Loi Informatique et Libertés: access, correction, erasure and objection. You can also complain to the CNIL (cnil.fr). Requests go to the address above.</p>
+  <h3>Does the site track visitors?</h3>
+  <p>The viewer itself sets no cookies and runs no analytics.</p>
+  <form method="dialog"><button>Close</button></form>
+</dialog>
+<main>
+<nav>
+  <p class="muted" id="disclaimer" style="font-size:11px;line-height:1.35;margin:0 0 8px">Built automatically from publicly released records. Appearing here does not imply wrongdoing: a link means only that names occur in the same records. Text recognition and name matching make mistakes, so check the source document before relying on anything shown.</p>
+  <form id="unlock" hidden>
+    <div class="row"><input type="password" id="password" placeholder="Viewer password" autocomplete="current-password" aria-label="Viewer password"><button id="unlock-button">Unlock</button></div>
+  </form>
+  <details><summary>Find connection</summary>
+    <div class="row"><input type="text" id="path-from" placeholder="Path from…" list="names" aria-label="Path from"><input type="text" id="path-to" placeholder="…to" list="names" aria-label="Path to"></div>
+    <button id="find-path">Find connection</button>
+  </details>
+  <h2>Show</h2>
+  <div id="types"></div>
+  <div id="subtypes"></div>
+  <label class="check"><input type="checkbox" id="show-incidental">Show incidental organizations</label>
+  <div class="row"><select id="relationship" aria-label="Link type"><option value="">All link types</option></select></div>
+  <label class="muted">Co-mentions <select id="co-mentions"><option value="all">All</option><option value="new" selected>New connections only</option><option value="hidden">Hidden</option></select></label>
+  <label class="check"><input type="checkbox" data-hide="isolates">Hide unconnected dots</label>
+  <div class="row"><button id="reset" title="Back to the default filters">Reset filters</button></div>
+
+  <details id="advanced"><summary>Advanced</summary>
+    <h2>Hide legal status</h2>
+    <label class="check"><input type="checkbox" data-status="convicted">Convicted</label>
+    <label class="check"><input type="checkbox" data-status="in_custody">In custody</label>
+    <label class="check"><input type="checkbox" data-status="under_investigation">Under investigation</label>
+    <label class="check"><input type="checkbox" data-status="deceased">Deceased</label>
+    <h2>Layout</h2>
+    <select id="link-mode" aria-label="Link drawing mode"><option value="">Draw all links</option><option value="focus">Draw links of hovered / selected only</option></select>
+    <div class="row"><button id="layout-toggle" aria-pressed="false">Animate layout</button></div>
+    <label class="muted">Spacing <input type="range" id="spacing" min="120" max="500" step="20" value="240"></label>
+  </details>
+
+  <details><summary>About</summary>
+    <p>Dot size = connections; line width = records. Amber dashed: named in the same documents. Purple dashed: same dates. Arrows: sender → recipient. Red: survivors; half red: also named as a co-conspirator. Links are reading leads, not evidence of wrongdoing.</p>
+    <p>Double-click a type to show only it. Click for details, double-click a dot to gather neighbours, scroll to zoom. Keys: <b>/</b> search, <b>[</b> panel, <b>F</b> fit, <b>Esc</b> close.</p>
+  </details>
+</nav>
+<div id="stage">
+<div id="graph"><div id="status" class="muted">Loading…</div></div>
+<div id="toolbar">
+  <button id="panel-toggle" aria-pressed="true" title="Show / hide filters panel ( [ )" aria-label="Filters panel">☰</button>
+  <input type="text" id="search" placeholder="Search a name…  ( / )" list="names" aria-label="Search"><datalist id="names"></datalist>
+  <button id="fit" title="Fit graph to screen (F)">Fit</button>
+  <button id="clear" title="Clear selection (Esc)">Clear</button>
+</div>
+<aside id="details" hidden>
+  <button id="detail-close" title="Close (Esc)" aria-label="Close details">×</button>
+  <div id="detail-title">Nothing selected</div>
+  <div id="detail-sub" class="muted">Click a dot or line.</div>
+  <div id="neighbors"></div>
+  <div id="docs"></div>
+  <details id="raw-box"><summary>Raw record</summary><pre id="raw"></pre></details>
+</aside>
+</div>
+</main>
+<script>RENDERER_JS</script>
+<script>LOGIC_JS</script>
+<script type="application/octet-stream" id="viewer-data">PAYLOAD</script>
+DETAIL_CHUNKS
+<script>let data; const COLORS = COLORS_JSON; const SECRET = SECRET_JSON; const PUBLIC_REVEAL = PUBLIC_REVEAL_JSON;</script>
+<script type="application/octet-stream" id="viewer-app">APP_JS</script>
+<script>
+// Keep compressed data out of executable script source. Release the boot block
+// after parsing; full detail blocks stay compressed in the DOM, never copied en masse.
+decodeGzip(document.getElementById('viewer-data').textContent).then(text => {
+  data = JSON.parse(text);
+  document.getElementById('viewer-data').remove();
+  const source = document.getElementById('viewer-app'), script = document.createElement('script');
+  script.textContent = source.textContent; source.remove(); document.body.appendChild(script); script.remove();
+}).catch(error => { document.getElementById('status').textContent = 'Unable to load viewer: ' + error.message; });
+</script>
+</html>

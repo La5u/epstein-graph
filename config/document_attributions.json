@@ -1,0 +1,5 @@
+{
+  "_doc": "Reviewed per-document owners of a bare first-name header label (member). In the listed documents the label's message records are attributed to canonical; elsewhere the label stays as it is. Applied after first_name_owners in build_communications.py. confidence: confirmed = thread or quoted-text link to a document naming the person; probable = content only.",
+  "attributions": [],
+  "_public_repo": "Withheld in the public repository: reviewed records about individuals (personal data). Format: see _doc."
+}

@@ -1,0 +1,1077 @@
+{
+  "Department of Justice": {
+    "type": "organization",
+    "subtype": "government",
+    "aliases": [
+      "DOJ",
+      "US DOJ",
+      "U.S. Department of Justice"
+    ]
+  },
+  "Federal Bureau of Investigation": {
+    "type": "organization",
+    "subtype": "government",
+    "aliases": [
+      "FBI"
+    ]
+  },
+  "Internal Revenue Service": {
+    "type": "organization",
+    "subtype": "government",
+    "aliases": [
+      "IRS"
+    ]
+  },
+  "United States Department of the Treasury": {
+    "type": "organization",
+    "subtype": "government",
+    "aliases": [
+      "Treasury Department",
+      "US Treasury",
+      "U.S. Treasury"
+    ]
+  },
+  "United States Department of State": {
+    "type": "organization",
+    "subtype": "government",
+    "aliases": [
+      "State Department",
+      "State Dept"
+    ]
+  },
+  "Department of Homeland Security": {
+    "type": "organization",
+    "subtype": "government",
+    "aliases": [
+      "DHS"
+    ]
+  },
+  "Immigration and Customs Enforcement": {
+    "type": "organization",
+    "subtype": "government",
+    "aliases": [
+      "ICE"
+    ]
+  },
+  "Customs and Border Protection": {
+    "type": "organization",
+    "subtype": "government",
+    "aliases": [
+      "CBP"
+    ]
+  },
+  "Federal Aviation Administration": {
+    "type": "organization",
+    "subtype": "government",
+    "aliases": [
+      "FAA"
+    ]
+  },
+  "United States Attorney's Office for the Southern District of New York": {
+    "type": "organization",
+    "subtype": "government",
+    "aliases": [
+      "SDNY",
+      "USAO SDNY"
+    ]
+  },
+  "United States Attorney's Office for the Southern District of Florida": {
+    "type": "organization",
+    "subtype": "government",
+    "aliases": [
+      "SDFL",
+      "USAO SDFL"
+    ]
+  },
+  "Government of the US Virgin Islands": {
+    "type": "organization",
+    "subtype": "government",
+    "aliases": [
+      "Government of the USVI",
+      "USVI government",
+      "Government of the United States Virgin Islands"
+    ]
+  },
+  "US Virgin Islands Department of Justice": {
+    "type": "organization",
+    "subtype": "government",
+    "aliases": [
+      "USVI DOJ",
+      "Virgin Islands Department of Justice"
+    ]
+  },
+  "US Virgin Islands Attorney General": {
+    "type": "organization",
+    "subtype": "government",
+    "aliases": [
+      "USVI AG",
+      "Virgin Islands Attorney General"
+    ]
+  },
+  "Financial Crimes Enforcement Network": {
+    "type": "organization",
+    "subtype": "regulator",
+    "aliases": [
+      "FinCEN"
+    ]
+  },
+  "Office of the Comptroller of the Currency": {
+    "type": "organization",
+    "subtype": "regulator",
+    "aliases": [
+      "OCC",
+      "Comptroller of the Currency"
+    ]
+  },
+  "Federal Reserve": {
+    "type": "organization",
+    "subtype": "regulator",
+    "aliases": [
+      "Federal Reserve Board",
+      "Federal Reserve Bank"
+    ]
+  },
+  "Securities and Exchange Commission": {
+    "type": "organization",
+    "subtype": "regulator",
+    "aliases": [
+      "SEC"
+    ]
+  },
+  "Financial Industry Regulatory Authority": {
+    "type": "organization",
+    "subtype": "regulator",
+    "aliases": [
+      "FINRA"
+    ]
+  },
+  "Commodity Futures Trading Commission": {
+    "type": "organization",
+    "subtype": "regulator",
+    "aliases": [
+      "CFTC"
+    ]
+  },
+  "New York Department of Financial Services": {
+    "type": "organization",
+    "subtype": "regulator",
+    "aliases": [
+      "NY DFS",
+      "NYDFS",
+      "New York State Department of Financial Services"
+    ]
+  },
+  "Financial Conduct Authority": {
+    "type": "organization",
+    "subtype": "regulator",
+    "aliases": [
+      "FCA",
+      "UK FCA"
+    ]
+  },
+  "Federal Deposit Insurance Corporation": {
+    "type": "organization",
+    "subtype": "regulator",
+    "aliases": [
+      "FDIC"
+    ]
+  },
+  "Consumer Financial Protection Bureau": {
+    "type": "organization",
+    "subtype": "regulator",
+    "aliases": [
+      "CFPB"
+    ]
+  },
+  "European Central Bank": {
+    "type": "organization",
+    "subtype": "regulator",
+    "aliases": [
+      "ECB"
+    ]
+  },
+  "Bank of England": {
+    "type": "organization",
+    "subtype": "regulator",
+    "aliases": [
+      "BoE"
+    ]
+  },
+  "United States Congress": {
+    "type": "organization",
+    "subtype": "legislature",
+    "aliases": [
+      "Congress",
+      "U.S. Congress"
+    ]
+  },
+  "United States Senate": {
+    "type": "organization",
+    "subtype": "legislature",
+    "aliases": [
+      "U.S. Senate",
+      "US Senate"
+    ]
+  },
+  "United States House of Representatives": {
+    "type": "organization",
+    "subtype": "legislature",
+    "aliases": [
+      "House of Representatives"
+    ]
+  },
+  "Senate Finance Committee": {
+    "type": "organization",
+    "subtype": "legislature",
+    "aliases": [
+      "Senate Committee on Finance"
+    ]
+  },
+  "Senate Judiciary Committee": {
+    "type": "organization",
+    "subtype": "legislature",
+    "aliases": [
+      "Senate Committee on the Judiciary"
+    ]
+  },
+  "House Judiciary Committee": {
+    "type": "organization",
+    "subtype": "legislature",
+    "aliases": [
+      "House Committee on the Judiciary"
+    ]
+  },
+  "House Oversight Committee": {
+    "type": "organization",
+    "subtype": "legislature",
+    "aliases": [
+      "House Committee on Oversight"
+    ]
+  },
+  "Senate Banking Committee": {
+    "type": "organization",
+    "subtype": "legislature",
+    "aliases": [
+      "Senate Committee on Banking"
+    ]
+  },
+  "House Financial Services Committee": {
+    "type": "organization",
+    "subtype": "legislature",
+    "aliases": [
+      "House Committee on Financial Services"
+    ]
+  },
+  "Senate Foreign Relations Committee": {
+    "type": "organization",
+    "subtype": "legislature",
+    "aliases": []
+  },
+  "Senate Intelligence Committee": {
+    "type": "organization",
+    "subtype": "legislature",
+    "aliases": []
+  },
+  "House Intelligence Committee": {
+    "type": "organization",
+    "subtype": "legislature",
+    "aliases": []
+  },
+  "United States Supreme Court": {
+    "type": "organization",
+    "subtype": "court",
+    "aliases": [
+      "U.S. Supreme Court"
+    ]
+  },
+  "United States District Court for the Southern District of New York": {
+    "type": "organization",
+    "subtype": "court",
+    "aliases": []
+  },
+  "United States District Court for the Southern District of Florida": {
+    "type": "organization",
+    "subtype": "court",
+    "aliases": []
+  },
+  "Superior Court of the Virgin Islands": {
+    "type": "organization",
+    "subtype": "court",
+    "aliases": []
+  },
+  "JPMorgan Chase": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "JPMC",
+      "JPM",
+      "JP Morgan",
+      "J.P. Morgan",
+      "JPMorgan Chase & Co.",
+      "JPMorgan Chase 8 Co.",
+      "JPMorgan",
+      "Chase"
+    ]
+  },
+  "Bank of America": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "BofA",
+      "BofA Securities",
+      "Bank of America Corp",
+      "Bank of America Corporation"
+    ]
+  },
+  "Citigroup": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Citi",
+      "Citibank"
+    ]
+  },
+  "Wells Fargo": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "Goldman Sachs": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "GS",
+      "Goldman Sachs Group"
+    ]
+  },
+  "Morgan Stanley": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "MS"
+    ]
+  },
+  "BNY Mellon": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "BNY",
+      "Mellon Bank",
+      "Bank of New York Mellon"
+    ]
+  },
+  "State Street": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "State Street Corporation"
+    ]
+  },
+  "US Bancorp": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "U.S. Bancorp",
+      "US Bank",
+      "U.S. Bank"
+    ]
+  },
+  "PNC Financial Services": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "PNC",
+      "PNC Bank"
+    ]
+  },
+  "Truist Financial": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Truist",
+      "SunTrust",
+      "BB&T"
+    ]
+  },
+  "Capital One": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Capital One Financial"
+    ]
+  },
+  "Charles Schwab": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Schwab"
+    ]
+  },
+  "TD Bank": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Toronto-Dominion Bank",
+      "TD Securities",
+      "TD"
+    ]
+  },
+  "Bank of Montreal": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "BMO",
+      "BMO Capital Markets"
+    ]
+  },
+  "Royal Bank of Canada": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "RBC",
+      "RBC Capital Markets"
+    ]
+  },
+  "Canadian Imperial Bank of Commerce": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "CIBC"
+    ]
+  },
+  "Northern Trust": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "American Express": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "AmEx"
+    ]
+  },
+  "Discover Financial": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Discover Bank"
+    ]
+  },
+  "Ally Financial": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Ally Bank"
+    ]
+  },
+  "Fifth Third Bank": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "Citizens Financial Group": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Citizens Bank"
+    ]
+  },
+  "KeyBank": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "KeyCorp"
+    ]
+  },
+  "Regions Financial": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Regions Bank"
+    ]
+  },
+  "Huntington Bancshares": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Huntington Bank"
+    ]
+  },
+  "M&T Bank": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "HSBC": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "HSBC Holdings"
+    ]
+  },
+  "Barclays": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Barclays Bank",
+      "Barclays Bank PLC"
+    ]
+  },
+  "Deutsche Bank": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "DB"
+    ]
+  },
+  "UBS": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "UBS Group"
+    ]
+  },
+  "Credit Suisse": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "CS"
+    ]
+  },
+  "BNP Paribas": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "Cr\u00e9dit Agricole": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Credit Agricole"
+    ]
+  },
+  "Soci\u00e9t\u00e9 G\u00e9n\u00e9rale": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Societe Generale"
+    ]
+  },
+  "Banco Santander": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Santander"
+    ]
+  },
+  "Banco Bilbao Vizcaya Argentaria": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "BBVA"
+    ]
+  },
+  "ING Group": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "ING Bank",
+      "ING"
+    ]
+  },
+  "UniCredit": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "UniCredit Bank"
+    ]
+  },
+  "Intesa Sanpaolo": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "Deutsche Zentral-Genossenschaftsbank": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "DZ Bank"
+    ]
+  },
+  "Commerzbank": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "Lloyds Banking Group": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Lloyds Bank"
+    ]
+  },
+  "NatWest Group": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "NatWest",
+      "Royal Bank of Scotland",
+      "RBS"
+    ]
+  },
+  "Standard Chartered": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "Danske Bank": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "Nordea": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "SEB": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Skandinaviska Enskilda Banken"
+    ]
+  },
+  "Swedbank": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "Raiffeisen Bank International": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Raiffeisen"
+    ]
+  },
+  "Bank of Ireland": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "Allied Irish Banks": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "AIB"
+    ]
+  },
+  "Jefferies": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Jefferies Group"
+    ]
+  },
+  "Nomura": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Nomura Securities"
+    ]
+  },
+  "Merrill Lynch": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Merrill"
+    ]
+  },
+  "Bear Stearns": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "Lehman Brothers": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "BlackRock": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "Blackstone": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "Fidelity Investments": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": []
+  },
+  "Vanguard": {
+    "type": "organization",
+    "subtype": "bank",
+    "aliases": [
+      "Vanguard Group"
+    ]
+  },
+  "The New York Times": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": [
+      "New York Times",
+      "NYT"
+    ]
+  },
+  "Wall Street Journal": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": [
+      "The Wall Street Journal",
+      "WSJ"
+    ]
+  },
+  "Bloomberg": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": [
+      "Bloomberg News"
+    ]
+  },
+  "Reuters": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": [
+      "Thomson Reuters"
+    ]
+  },
+  "Associated Press": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": [
+      "AP News"
+    ]
+  },
+  "Washington Post": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": [
+      "The Washington Post"
+    ]
+  },
+  "Financial Times": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": [
+      "FT"
+    ]
+  },
+  "60 Minutes": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "CBS": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": [
+      "CBS News"
+    ]
+  },
+  "NBC": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": [
+      "NBC News"
+    ]
+  },
+  "ABC": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": [
+      "ABC News"
+    ]
+  },
+  "CNN": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "BBC": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": [
+      "BBC News"
+    ]
+  },
+  "Fox News": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "MSNBC": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "NPR": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "PBS": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "The Guardian": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": [
+      "Guardian"
+    ]
+  },
+  "Miami Herald": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "New York Post": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "New York Daily News": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "Vanity Fair": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "The New Yorker": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "Time Magazine": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "Newsweek": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "The Economist": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "Forbes": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "Politico": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "Axios": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "ProPublica": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "Agence France-Presse": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": [
+      "AFP"
+    ]
+  },
+  "Al Jazeera": {
+    "type": "organization",
+    "subtype": "media",
+    "aliases": []
+  },
+  "Microsoft": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": [
+      "Microsoft Corporation"
+    ]
+  },
+  "Apple": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": [
+      "Apple Inc"
+    ]
+  },
+  "Google": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": [
+      "Alphabet",
+      "Google Inc"
+    ]
+  },
+  "Amazon": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": [
+      "Amazon.com",
+      "Amazon Web Services",
+      "AWS"
+    ]
+  },
+  "Meta": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": [
+      "Facebook",
+      "Meta Platforms"
+    ]
+  },
+  "Twitter": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": [
+      "X Corp"
+    ]
+  },
+  "YouTube": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "Instagram": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "LinkedIn": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "WhatsApp": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "Oracle": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "IBM": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": [
+      "International Business Machines"
+    ]
+  },
+  "Intel": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "Nvidia": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": [
+      "NVIDIA"
+    ]
+  },
+  "Cisco": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "Salesforce": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "Adobe": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "Tesla": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "Netflix": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "PayPal": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "eBay": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "Uber": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "Airbnb": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "Palantir": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "OpenAI": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "Samsung": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "Tencent": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "Alibaba": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": []
+  },
+  "ByteDance": {
+    "type": "organization",
+    "subtype": "company",
+    "aliases": [
+      "TikTok"
+    ]
+  }
+}

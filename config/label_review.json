@@ -1,0 +1,7 @@
+{
+  "_doc": "Model label review (scripts/label_review.py, Terra, high confidence only). Viewer id -> not_a_name (hidden, never deleted) or retype; sig = sha256(real label)[:10], so a verdict lapses when the label changes. No names here. merges: explicit viewer-only source ID -> target ID with source/target real-label hashes; canonical publication decisions are retained.",
+  "by": "gpt-6.1-terra 2026-11-11",
+  "labels": {},
+  "merges": {},
+  "_public_repo": "Withheld in the public repository: reviewed records about individuals (personal data). Format: see _doc."
+}

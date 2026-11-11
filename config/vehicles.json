@@ -1,0 +1,491 @@
+{
+  "review_policy": "Only reviewed named/registered vehicles with at least two contextual documents become new nodes; near-duplicate copies count once. Existing KG aircraft IDs are retained even without corroboration. Names, models, registration history and relevance were read in public corpus text. Co-mention edges never assert ownership or use.",
+  "review_exclusions": [
+    {
+      "name": "Tvu Mzel / Adler II",
+      "note": "Many hits are staff prior-employer/crew correspondence. No reviewed evidence here establishes Epstein island use; discovery candidates only."
+    },
+    {
+      "name": "N162AE",
+      "note": "Registration reused for different helicopter serials; do not merge N162AD with N722JE using this alias."
+    },
+    {
+      "name": "N737L",
+      "note": "Purchase offers and marketing show a proposed acquisition, not established ownership or use; discovery candidate only."
+    }
+  ],
+  "vehicles": [
+    {
+      "name": "N908JE (Boeing 727-31)",
+      "kind": "aircraft",
+      "aliases": [
+        "N908JE"
+      ],
+      "registration": "N908JE",
+      "note": "Existing KG aircraft, ID preserved. Registration and Boeing 727 are corroborated by fleet inventories and maintenance documents.",
+      "sample_eftas": [
+        "EFTA01083117",
+        "EFTA00521412"
+      ],
+      "kg_id": 493
+    },
+    {
+      "name": "N909JE (Gulfstream II)",
+      "kind": "aircraft",
+      "aliases": [
+        "N909JE"
+      ],
+      "registration": "N909JE",
+      "note": "Existing KG aircraft, ID preserved. Inventories identify the 1974 Gulfstream G-IIB.",
+      "sample_eftas": [
+        "EFTA01083117",
+        "EFTA02725440"
+      ],
+      "kg_id": 494
+    },
+    {
+      "name": "N212JE (Gulfstream; registration reused)",
+      "kind": "aircraft",
+      "aliases": [
+        "N212JE",
+        "N415LM"
+      ],
+      "registration": "N212JE",
+      "note": "Existing KG ID preserved, but the KG Cessna 421 model is contradicted by the corpus. This registration-based node spans historical G-IV serial 1085 and later G550 serial 5173; do not infer a unique airframe from N212JE alone. The 2017 FAA assignment changes G550 N415LM to N212JE. The G-IV subsequently uses N120JE, represented separately.",
+      "sample_eftas": [
+        "EFTA01261122",
+        "EFTA00612431",
+        "EFTA00521412"
+      ],
+      "kg_id": 495,
+      "registration_note": "N212JE was reassigned between different Gulfstream airframes. N415LM is the former registration of the later G550; N120JE/N423TT identify the earlier G-IV. Co-mentions of N212JE cannot by themselves disambiguate the airframe.",
+      "model": "Gulfstream G-IV / Gulfstream G550 (registration reused)"
+    },
+    {
+      "name": "N34JE (Helicopter)",
+      "kind": "aircraft",
+      "aliases": [
+        "N34JE"
+      ],
+      "registration": "N34JE",
+      "note": "Existing KG ID preserved as requested. No corroborating exact-registration corpus hits found during review; no new evidence or co-mention links inferred. This is the explicit exception for retaining an existing KG node. Do not substitute N331JE or assume it is a spelling variant.",
+      "sample_eftas": [],
+      "kg_id": 496
+    },
+    {
+      "name": "N331JE (Bell 430)",
+      "kind": "aircraft",
+      "aliases": [
+        "N331JE",
+        "N901RL"
+      ],
+      "registration": "N331JE",
+      "note": "Bell 430, serial 49078; FAA registration history identifies N901RL as its former registration. Fleet inventories and FAA history establish Epstein-related ownership/use.",
+      "sample_eftas": [
+        "EFTA00017875",
+        "EFTA01083117"
+      ],
+      "serial_number": "49078"
+    },
+    {
+      "name": "N491GM (Bell 407)",
+      "kind": "aircraft",
+      "aliases": [
+        "N491GM"
+      ],
+      "registration": "N491GM",
+      "note": "Bell 407 used for island transport. An investigative interview describes Epstein island flights; an Indyke notice says it was sold April 30, 2012.",
+      "sample_eftas": [
+        "EFTA00159473",
+        "EFTA02808897"
+      ]
+    },
+    {
+      "name": "N722JE (Sikorsky S-76C)",
+      "kind": "aircraft",
+      "aliases": [
+        "N722JE",
+        "N750A"
+      ],
+      "registration": "N722JE",
+      "note": "Sikorsky/Keystone S-76C, serial 760750; FAA history records Air Ghislaine/Shmitka Air and former registration N750A. Do not merge N908GM (serial 760667). N162AE is not searched as an alias because that registration also identifies the different serial 760472 helicopter.",
+      "sample_eftas": [
+        "EFTA00017875",
+        "EFTA01332772"
+      ],
+      "serial_number": "760750"
+    },
+    {
+      "name": "N908GM (Sikorsky S-76C)",
+      "kind": "aircraft",
+      "aliases": [
+        "N908GM"
+      ],
+      "registration": "N908GM",
+      "note": "Sikorsky S-76C serial 760667. Bill-of-sale filing letter names Air Ghislaine, Inc.; later court records discuss the Epstein-funded purchase. Distinct from N722JE serial 760750.",
+      "sample_eftas": [
+        "EFTA02727497",
+        "EFTA02809437"
+      ],
+      "serial_number": "760667"
+    },
+    {
+      "name": "N162AD (Sikorsky S-76C+)",
+      "kind": "aircraft",
+      "aliases": [
+        "N162AD"
+      ],
+      "registration": "N162AD",
+      "note": "Sikorsky S-76C+ serial 760472, purchased July 26, 2011 for potential Epstein use, then sold February 9, 2012. Indyke notices explicitly change N162AE to N162AD. N162AE is deliberately not an alias because FAA records also use it for a different serial, 760750.",
+      "sample_eftas": [
+        "EFTA00306047",
+        "EFTA02808897"
+      ],
+      "serial_number": "760472",
+      "registration_note": "Formerly N162AE; that registration is ambiguous across different airframes, so it is retained as a discovery candidate rather than used as a global alias."
+    },
+    {
+      "name": "N120JE (Gulfstream IV)",
+      "kind": "aircraft",
+      "aliases": [
+        "N120JE",
+        "N423TT"
+      ],
+      "registration": "N120JE",
+      "note": "1988 Gulfstream G-IV serial 1085, formerly N423TT and then N212JE. Pre-buy paperwork and later fleet inventory identify N120JE. The retained KG N212JE node is registration-based and spans this airframe and a later G550; do not treat their co-mentions as separate-flight evidence.",
+      "sample_eftas": [
+        "EFTA00796155",
+        "EFTA00521412",
+        "EFTA01261122"
+      ],
+      "serial_number": "1085",
+      "registration_note": "N423TT -> N212JE -> N120JE for serial 1085; N212JE was later assigned to G550 serial 5173."
+    },
+    {
+      "name": "N7660S (charter helicopter)",
+      "kind": "aircraft",
+      "aliases": [
+        "N7660S"
+      ],
+      "registration": "N7660S",
+      "note": "AAG charter helicopter tail explicitly appears in Epstein itinerary emails for a New York-to-Rhode Island visit. Included as documented transport, with no assertion that Epstein owned it.",
+      "sample_eftas": [
+        "EFTA01852186",
+        "EFTA01852259"
+      ]
+    },
+    {
+      "name": "Nana",
+      "kind": "boat",
+      "aliases": [
+        "Nanna"
+      ],
+      "registration": "2709-TC",
+      "note": "1999 35-foot Ribtec island tender/guest transport. Fleet inventories also print registration 2709-TB; emails use Nana and Nanna for the same boat.",
+      "sample_eftas": [
+        "EFTA01083117",
+        "EFTA00521417",
+        "EFTA00523411"
+      ],
+      "hull_number": "99507"
+    },
+    {
+      "name": "Little C",
+      "kind": "boat",
+      "aliases": [],
+      "registration": "2907-TC",
+      "note": "2008 36-foot Procat/ProKat 3660. Island staff/material runs appear in boat logs, fleet inventories and a damage survey.",
+      "sample_eftas": [
+        "EFTA01083117",
+        "EFTA01100171",
+        "EFTA00259039"
+      ],
+      "hull_number": "WJIF1016B808"
+    },
+    {
+      "name": "PRD",
+      "kind": "boat",
+      "aliases": [
+        "PRD boat"
+      ],
+      "registration": "0730-TC",
+      "note": "2006 31-foot Cape Horn. Fleet inventory and island fleet plan identify this as the manager/security/vendor transport boat. Avoid generic Cape Horn geographic matches.",
+      "sample_eftas": [
+        "EFTA01083117",
+        "EFTA00523411"
+      ],
+      "hull_number": "FAB31056K506"
+    },
+    {
+      "name": "Little S (Sportis)",
+      "kind": "boat",
+      "aliases": [
+        "Little S",
+        "Sportis"
+      ],
+      "registration": "4772-TC",
+      "note": "2013 34-foot Sportis S-10500/K, named Little S in fleet inventories and Sportis in island maintenance/boat logs. One node for these spellings.",
+      "sample_eftas": [
+        "EFTA00521417",
+        "EFTA00259039"
+      ],
+      "hull_number": "PL-SPTZ1969G313"
+    },
+    {
+      "name": "Nautica (41-foot RIB)",
+      "kind": "boat",
+      "aliases": [
+        "Nautica boat",
+        "Nautica RIB"
+      ],
+      "registration": "5890-TC",
+      "note": "2011 41-foot Nautica RIB. Fleet inventories identify the specific hull; island maintenance and transport plan call it the Nautica boat.",
+      "sample_eftas": [
+        "EFTA00521417",
+        "EFTA00523411"
+      ],
+      "hull_number": "PTJ41007K011"
+    },
+    {
+      "name": "Big N (Miss Ava barge)",
+      "kind": "boat",
+      "aliases": [
+        "Big N",
+        "Miss Ava"
+      ],
+      "registration": "2583-TC",
+      "note": "1968 73-foot LMC-8 barge, listed as Miss Ava and Big N in fleet inventories. Used for island logistics; civil filings also describe Big N Barge.",
+      "sample_eftas": [
+        "EFTA01083117",
+        "EFTA00798407"
+      ],
+      "hull_number": "74CM6763"
+    },
+    {
+      "name": "Lady G",
+      "kind": "boat",
+      "aliases": [
+        "Fat Cat"
+      ],
+      "registration": "0259-TC",
+      "note": "1984 approximately 40-foot Logical catamaran at LSJ, identified in fleet inventories and later sale notice. Distinct from Robert Maxwell yacht Lady Ghislaine; no alias between them. Maintenance lists explicitly identify Lady G (Fat Cat), EFTA00584505 and EFTA00584525.",
+      "sample_eftas": [
+        "EFTA00609356",
+        "EFTA00588866",
+        "EFTA00584505"
+      ],
+      "hull_number": "D1056602"
+    },
+    {
+      "name": "Calypso",
+      "kind": "boat",
+      "aliases": [],
+      "registration": "2660-TB",
+      "note": "2000 34-foot Calypso Pirogue, listed at LSJ in fleet inventories; later emails discuss Carlos boat Calypso.",
+      "sample_eftas": [
+        "EFTA00609356",
+        "EFTA01118616"
+      ],
+      "hull_number": "CMS34109918"
+    },
+    {
+      "name": "Lady K",
+      "kind": "boat",
+      "aliases": [
+        "Sub Quest",
+        "Subquest"
+      ],
+      "registration": "3558-TC",
+      "note": "1998 55-foot Midship Marine/Sea Ark crew boat, formerly Sub Quest/Subquest. Expense ledger EFTA01090028 explicitly labels the account Lady K (Sub Quest); fleet inventories and purchase binders provide separate corroboration. One node for these names.",
+      "sample_eftas": [
+        "EFTA00609356",
+        "EFTA01873890",
+        "EFTA01090028",
+        "EFTA00300480"
+      ],
+      "hull_number": "1062074"
+    },
+    {
+      "name": "Mid Express (Midnight Express 39)",
+      "kind": "boat",
+      "aliases": [
+        "Mid Express",
+        "Midnight Express Cuddy Cabin"
+      ],
+      "registration": "3499-TC",
+      "note": "2010 39-foot Midnight Express Cuddy Cabin, named Mid Express in fleet inventories. Bare midnight and manufacturer-only advertisements are not aliases.",
+      "sample_eftas": [
+        "EFTA01083117",
+        "EFTA00609356"
+      ],
+      "hull_number": "EXK39173J910"
+    },
+    {
+      "name": "Revelation",
+      "kind": "boat",
+      "aliases": [],
+      "registration": "1093025",
+      "note": "2000 33-foot Donzi Cuddy, listed as Revelation at Florida in Epstein fleet inventories. Included as a documented boat; not assumed to be an island ferry.",
+      "sample_eftas": [
+        "EFTA00609356",
+        "EFTA01118616"
+      ],
+      "hull_number": "DNAF6037L900"
+    },
+    {
+      "name": "Pursuit (1989 island boat)",
+      "kind": "boat",
+      "aliases": [
+        "Pursuit boat",
+        "GSJ Pursuit",
+        "SSUE3050C981"
+      ],
+      "registration": "3548-TC",
+      "note": "1989 approximately 23-foot Pursuit boat in fleet inventories; GSJ emails concern the Pursuit boat. Bare pursuit is excluded as an ambiguous word.",
+      "sample_eftas": [
+        "EFTA00521412",
+        "EFTA00602827"
+      ],
+      "hull_number": "SSUE3050C981"
+    },
+    {
+      "name": "The General II",
+      "kind": "boat",
+      "aliases": [
+        "General II"
+      ],
+      "registration": null,
+      "note": "Boyson charter ferry/barge used for LSJ. Indyke correspondence discusses LSJ charter arrangements; island emails discuss service outages and requests for a usage agreement. No Epstein ownership claim.",
+      "sample_eftas": [
+        "EFTA00306034",
+        "EFTA00816515"
+      ]
+    },
+    {
+      "name": "Mister B",
+      "kind": "boat",
+      "aliases": [],
+      "registration": "1181956",
+      "note": "Boyson passenger ferry discussed as an alternative to General II for island logistics. Its draft prevented docking at LSJ; discussion is not proof that the proposed trip occurred. USCG number from vessel particulars in litigation.",
+      "sample_eftas": [
+        "EFTA00721099",
+        "EFTA01123882"
+      ]
+    },
+    {
+      "name": "Auto Trans-It",
+      "kind": "boat",
+      "aliases": [],
+      "registration": "1021404",
+      "note": "Named passenger vessel and subject of LSJ charter/advance dispute. Correspondence says it was unavailable and General II was substituted; do not infer actual LSJ trips on Auto Trans-It. USCG number from vessel particulars.",
+      "sample_eftas": [
+        "EFTA00306034",
+        "EFTA01123882"
+      ]
+    },
+    {
+      "name": "John-O-Point",
+      "kind": "boat",
+      "aliases": [
+        "John O Point"
+      ],
+      "registration": "1079189",
+      "note": "1998 Osmond 38 ferry, hull HHM380171898. Purchase survey and invoice addressed to LSJE document consideration for acquisition, not a completed purchase or actual island service.",
+      "sample_eftas": [
+        "EFTA01114556",
+        "EFTA00599540"
+      ],
+      "hull_number": "HHM380171898"
+    },
+    {
+      "name": "Starfire",
+      "kind": "boat",
+      "aliases": [],
+      "registration": null,
+      "note": "178-foot motor yacht documented in survey/charter papers and Leon Black financial records handled in Epstein-related correspondence. This is a network vehicle, not an assertion of Epstein ownership or island use.",
+      "sample_eftas": [
+        "EFTA01080045",
+        "EFTA01943849"
+      ]
+    },
+    {
+      "name": "Daima",
+      "kind": "boat",
+      "aliases": [],
+      "registration": null,
+      "note": "124-foot motor sailer owned by Erbil Arkin. Ghislaine Maxwell emails discuss a charity-auction charter booking and available dates. Included as documented network charter activity, not Epstein ownership or island service.",
+      "sample_eftas": [
+        "EFTA00236485",
+        "EFTA00236501"
+      ]
+    },
+    {
+      "name": "Yamaha VX1800A-KB (4106-TC)",
+      "kind": "boat",
+      "aliases": [
+        "US-YAMA2823D111"
+      ],
+      "registration": "4106-TC",
+      "hull_number": "US-YAMA2823D111",
+      "note": "2011 Yamaha personal watercraft, identified individually by registration and hull in Epstein fleet inventories. No vessel name is given; model and registration form the display label.",
+      "sample_eftas": [
+        "EFTA00521412",
+        "EFTA00521417"
+      ]
+    },
+    {
+      "name": "Yamaha VX1800A-KB (4105-TC)",
+      "kind": "boat",
+      "aliases": [
+        "US-YAMA3205C111"
+      ],
+      "registration": "4105-TC",
+      "hull_number": "US-YAMA3205C111",
+      "note": "Second 2011 Yamaha personal watercraft. Same model as 4106-TC but a different registration and hull; keep separate. Model and registration form the display label.",
+      "sample_eftas": [
+        "EFTA00521412",
+        "EFTA00521417"
+      ]
+    },
+    {
+      "name": "Sea-Doo (4641-TC)",
+      "kind": "boat",
+      "aliases": [
+        "YDV19326E212"
+      ],
+      "registration": "4641-TC",
+      "hull_number": "YDV19326E212",
+      "note": "2012 Bombardier Sea-Doo personal watercraft in Epstein fleet inventories. Model and registration form the display label; no personal name is invented.",
+      "sample_eftas": [
+        "EFTA00521412",
+        "EFTA00521417"
+      ]
+    },
+    {
+      "name": "Zodiac Pro 750 (7054-TC)",
+      "kind": "boat",
+      "aliases": [
+        "FR-XDC40A131415"
+      ],
+      "registration": "7054-TC",
+      "hull_number": "FR-XDC40A131415",
+      "note": "2015 25-foot Zodiac Pro 750 island RIB in fleet inventories. Registration/hull identify the boat without inventing a vessel name.",
+      "sample_eftas": [
+        "EFTA00521417",
+        "EFTA00522924"
+      ]
+    },
+    {
+      "name": "Caribe DL15 RIB (6224-TC)",
+      "kind": "boat",
+      "aliases": [],
+      "registration": "6224-TC",
+      "hull_number": "D5004B418",
+      "note": "2018 15-foot Caribe DL15 island RIB in fleet inventories. Registration identifies the boat; hull OCR varies, so only registration is used for matching.",
+      "sample_eftas": [
+        "EFTA00521417",
+        "EFTA00522924"
+      ]
+    }
+  ]
+}

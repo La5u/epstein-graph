@@ -1,0 +1,7 @@
+{
+  "_doc": "People excluded from involvement rankings and presence timelines, and rendered as the victim type, because they are survivors. Upstream victim labels and victim_of sources are excluded automatically. Names match graph entities and email-header participants with exactly that name (case- and whitespace-insensitive). Only people publicly identified by their own name in court proceedings (named plaintiffs, testimony or statements under their own name, or a public waiver of anonymity); sources lists the proceeding. Pseudonymous claimants (Jane Doe n, first-name-only witnesses) are never resolved. Left out on purpose: people also named as co-conspirators or whose victim status is disputed (e.g. Sarah Ktisba, Ntado Mmifomobel, Rina Oh, Haley Robson), and names not yet confirmed in a court record.",
+  "names": [],
+  "sources": {},
+  "dual_status": {},
+  "_public_repo": "Withheld in the public repository: reviewed records about individuals (personal data). Format: see _doc."
+}

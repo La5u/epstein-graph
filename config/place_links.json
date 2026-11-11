@@ -1,0 +1,5 @@
+{
+  "_doc": "Reviewed place-person links read from the Epstein Exposed locations.json descriptions, which state ownership or use only in prose. place is the location slug, person a graph person name (matched like flight-log passengers). basis quotes the sentence the link rests on; nothing here goes beyond what the description says. relationship reads place -> person: owned_by, home_of (lived there), used_by (office or base), visited_by, purchase_attempted_by, detention_site_of, linked_to (description connects them without saying how). Links the knowledge graph already has (same place, person and type) are skipped.",
+  "links": [],
+  "_public_repo": "Withheld in the public repository: reviewed records about individuals (personal data). Format: see _doc."
+}

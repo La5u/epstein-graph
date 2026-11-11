@@ -1,0 +1,4 @@
+-r requirements.txt
+playwright==1.64.0
+rapidocr-onnxruntime==1.2.3
+onnxtr[cpu]==0.9.0

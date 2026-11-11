@@ -1,0 +1,5 @@
+{
+  "_doc": "Reviewed owners of full-text contact values (review_contact_owners.py: Luna and Sol both said owner, medium/high). IDs only; used by build_fulltext_contacts as the canonical.",
+  "owners": {},
+  "_public_repo": "Withheld in the public repository: reviewed records about individuals (personal data). Format: see _doc."
+}

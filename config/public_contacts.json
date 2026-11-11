@@ -1,0 +1,159 @@
+{
+  "_doc": "GDPR review 2026-11-10: publish attested organisation contacts; optionally also contacts of people named by the existing public-names decisions. All unresolved/private contacts use salted HMAC labels. This switch never changes whose name is public.",
+  "named_public_people": true,
+  "organisational_role_contacts": {
+    "lasushin@proton.me": "Site operator: published data protection request address"
+  },
+  "organisation_domains": {
+    "db.com": {
+      "canonical": "497",
+      "name": "Deutsche Bank",
+      "document": "EFTA01754567"
+    },
+    "jpmorgan.com": {
+      "canonical": "498",
+      "name": "JPMorgan Chase",
+      "document": "EFTA01583196"
+    },
+    "fbi.gov": {
+      "canonical": "506",
+      "name": "FBI",
+      "document": "EFTA01387783"
+    },
+    "apollolp.com": {
+      "canonical": "company_2575eae4d0958a12",
+      "name": "Apollo Management",
+      "document": "EFTA02031995"
+    },
+    "aa.com": {
+      "canonical": "company_a29ab6ead769b2f3",
+      "name": "American Airlines",
+      "document": "EFTA02097878"
+    },
+    "delta.com": {
+      "canonical": "company_2f998418ec9d82f0",
+      "name": "Delta Air Lines",
+      "document": "EFTA01927622"
+    },
+    "kirkland.com": {
+      "canonical": "company_fbfbd1ce5427cff7",
+      "name": "Kirkland & Ellis",
+      "document": "EFTA01355626"
+    },
+    "searcylaw.com": {
+      "canonical": "company_3e32dd0870abd249",
+      "name": "Searcy Denney",
+      "document": "EFTA01651594"
+    },
+    "kaplanhecker.com": {
+      "canonical": "company_04df7376a15a6a50",
+      "name": "Kaplan Hecker",
+      "document": "EFTA00028541"
+    },
+    "freestreambermuda.bm": {
+      "canonical": "company_27a40e0489cc2167",
+      "name": "Freestream",
+      "document": "EFTA01804986"
+    },
+    "dailycandy.com": {
+      "canonical": "company_64cd58e184308a25",
+      "name": "DailyCandy",
+      "document": "EFTA02319524"
+    },
+    "mit.edu": {
+      "canonical": "entity_366058c27e3438744ac0",
+      "name": "Massachusetts Institute of Technology",
+      "document": "EFTA01958761"
+    },
+    "princeton.edu": {
+      "canonical": "entity_6f4241a7694672b8f2da",
+      "name": "Princeton University",
+      "document": "EFTA01753925"
+    },
+    "elysllc.com": {
+      "canonical": "company_887a4fb474c37738",
+      "name": "Elysium Management",
+      "document": "EFTA01802114"
+    },
+    "elyslic.com": {
+      "canonical": "company_887a4fb474c37738",
+      "name": "Elysium Management",
+      "document": "EFTA01916502"
+    },
+    "akingump.com": {
+      "canonical": "company_8b7c9837e7eca961",
+      "name": "Akin Gump",
+      "document": "EFTA01802676"
+    },
+    "landmarklandco.com": {
+      "canonical": "company_a296fbfe844da34d",
+      "name": "Landmark Land",
+      "document": "EFTA01802857"
+    },
+    "cohengresser.com": {
+      "canonical": "company_e3eaa636e1cb3154",
+      "name": "Cohen & Gresser",
+      "document": "EFTA00031952"
+    },
+    "highbridge.com": {
+      "canonical": "company_fdf6427602bc7f07",
+      "name": "Highbridge Capital Management",
+      "document": "EFTA01581801"
+    },
+    "quora.com": {
+      "canonical": "participant_9245598e75542ae717a055c1",
+      "name": "Quora",
+      "document": "EFTA01738414"
+    },
+    "flightaware.com": {
+      "canonical": "participant_37c8355b7335d412d0953c6a",
+      "name": "FlightAware",
+      "document": "EFTA02098669"
+    },
+    "youtube.com": {
+      "canonical": "email_f2988533b394667bcbeb2261",
+      "name": "YouTube",
+      "document": "EFTA01927777"
+    },
+    "google.com": {
+      "canonical": "company_c6e33a60ba61a96b",
+      "name": "Google Inc.",
+      "document": "EFTA02565080"
+    },
+    "linkedin.com": {
+      "canonical": "company_2de3b5463bc08174",
+      "name": "LinkedIn Corporation",
+      "document": "EFTA02033060"
+    },
+    "imax.com": {
+      "canonical": "company_a3f60d0ac0203552",
+      "name": "IMAX Corporation",
+      "document": "EFTA01780843"
+    },
+    "centurion.com": {
+      "canonical": "company_ab7c5140d24aa536",
+      "name": "American Express Centurion Services Corporation",
+      "document": "EFTA02045254"
+    },
+    "irs.gov": {
+      "canonical": "entity_8ad43c4f654bbd1a7212",
+      "name": "Internal Revenue Service",
+      "document": "EFTA01362707"
+    },
+    "jetaviation.com": {
+      "canonical": "company_d3b93cd46749d1f6",
+      "name": "Jet Aviation Flight Services, Inc.",
+      "document": "EFTA01802676"
+    },
+    "hmflaw.com": {
+      "canonical": "company_29d3b9aa29a7c1a0",
+      "name": "Haddon, Morgan & Foreman, P.C.",
+      "document": "EFTA01357027"
+    },
+    "virgobc.com": {
+      "canonical": "entity_46d9f2a91e8228fa1183",
+      "name": "Virgo Business Centers",
+      "document": "EFTA00403622"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "_doc": "Curated names rendered as the separate 'victim' entity type. Sourced only from structured lists: config/survivors.json, this file, and persons_registry.json entries with category 'victim' (plus upstream person_type=victim and victim_of sources). No corpus search, OCR or redaction recovery is used to identify anyone. 'names' force-types a matching graph node; 'extra_nodes' adds a standalone victim node for a curated name that has no upstream graph node.",
+  "names": [],
+  "extra_nodes": [],
+  "_public_repo": "Withheld in the public repository: reviewed records about individuals (personal data). Format: see _doc."
+}

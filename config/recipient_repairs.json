@@ -1,0 +1,5 @@
+{
+  "_doc": "Recipients recovered from the official scans where a split webmail address left only its domain (\"mail.com\") in the header metadata. Written by scripts/reocr_fragments.py. engines = the OCR passes that read this address on the matching header line: either Tesseract and RapidOCR together, or two of Tesseract/RapidOCR/OnnxTR with none reading another address. The address is already a graph node and all candidate lines of the document agree. record = email_metadata.db emails_merged id; identity = pseudonymous address read; build_communications adds it as a recipient of that message.",
+  "repairs": [],
+  "_public_repo": "Withheld in the public repository: reviewed records about individuals (personal data). Format: see _doc."
+}

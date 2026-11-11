@@ -1,0 +1,7 @@
+{
+  "_doc": "Reviewed identity merges. members are merged into canonical (KG integer IDs, or pseudonymous email_/participant_/phone_ IDs). confidence: confirmed = same person by name variant/spelling; probable = strong but unverified (flight-log misspelling, surname-only label with one possible person, OCR/header variant). never_merge pairs block automatic rules. Every merge is recorded in the output with this reason. display_name (optional) sets the merged node's label.",
+  "merges": [],
+  "kept_separate": [],
+  "never_merge": [],
+  "_public_repo": "Withheld in the public repository: reviewed records about individuals (personal data). Format: see _doc."
+}

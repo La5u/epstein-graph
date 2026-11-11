@@ -1,0 +1,40 @@
+{
+ "_doc": "Dataset vocabulary for scripts/node_cleanup.py. model_makers: a name stem whose numbered labels are product models (Bell 407), with the node type to give them. aliases: a stem's canonical organization name (its numbered labels fold into that organization, or collapse into one node with this name). series_words: a stem ending in one of these is a numbered series of distinct entities (Trust 2, Fund III) and is kept.",
+ "model_makers": {
+  "Bell": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Gulfstream": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Sikorsky": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Cessna": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Boeing": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Airbus": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Learjet": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Falcon": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Dassault Falcon": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Challenger": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Citation": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Embraer": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Agusta": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "AgustaWestland": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Eurocopter": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Beechcraft": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "King Air": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Pilatus": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Hawker": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Piper": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Cirrus": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Robinson": {"entity_type": "vehicle", "vehicle_type": "aircraft"},
+  "Fokker": {"entity_type": "vehicle", "vehicle_type": "aircraft"}
+ },
+ "aliases": {
+  "Jet Blue": "JetBlue Airways", "JetBlue": "JetBlue Airways", "Delta": "Delta Air Lines", "United": "United Airlines",
+  "American": "American Airlines", "Southwest": "Southwest Airlines", "US Airways": "US Airways",
+  "Virgin America": "Virgin America", "Virgin Atlantic": "Virgin Atlantic", "British Airways": "British Airways",
+  "Air France": "Air France", "Lufthansa": "Lufthansa", "Air Canada": "Air Canada", "Spirit": "Spirit Airlines",
+  "Spirit Air": "Spirit Airlines", "Alaska": "Alaska Airlines", "Cape Air": "Cape Air", "Emirates": "Emirates",
+  "Alitalia": "Alitalia", "Iberia": "Iberia", "KLM": "KLM", "Swiss": "Swiss International Air Lines",
+  "Continental": "Continental Airlines", "Frontier": "Frontier Airlines", "Seaborne": "Seaborne Airlines",
+  "Aeroflot": "Aeroflot", "Amex": "American Express", "AMEX": "American Express"
+ },
+ "series_words": ["trust", "fund", "funds", "partners", "partnership", "series", "class", "account", "lp", "llc",
+                  "holdings", "investors", "capital", "properties", "associates", "ventures", "opportunities", "portfolio"]
+}
